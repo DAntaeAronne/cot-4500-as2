@@ -140,7 +140,7 @@ def apply_div_dif(matrix):
             numerator: float = left - diagonal_left
 
             # denominator is current i's x_val minus the starting i's x_val....
-            denominator = matrix[i][0] - matrix[i-j][0]
+            denominator = matrix[i][0] - matrix[i-j+1][0]
 
             # something save into matrix
             operation = numerator / denominator
